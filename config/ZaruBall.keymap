@@ -122,11 +122,11 @@
             display-name = "Base";
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5               &kp F5  &kp F10       &kp F11       &kp F12                    &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0    &kp TILDE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                &kp F3  &kp N7        &kp N8        &kp N9                     &kp Y         &kp U   &kp I      &kp O    &kp P     &kp EQUAL
-&kp LALT   &kp A   &kp S   &kp D     &kp F      &kp G   &kp MINUS    &kp F7  &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp LBKT   &kp H         &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B   &kp SPACE    &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp RBKT   &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-&kp LCTRL  &none           &kp LWIN  &mkp RCLK  &mo 2   &mkp LCLK                                                        &lt 3 RET  &kp BSPC                                            &kp DEL
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5               &kp F5  &kp F10       &kp F11       &kp F12                     &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0    &kp TILDE
+&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                &kp F3  &kp N7        &kp N8        &kp N9                      &kp Y         &kp U   &kp I      &kp O    &kp P     &kp EQUAL
+&kp MINUS  &kp A   &kp S   &kp D     &kp F      &kp G   &kp SPACE    &kp F7  &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp LBKT    &kp H         &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B   &kp LALT     &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &lt 4 RBKT  &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+&kp LCTRL  &none           &kp LWIN  &mkp RCLK  &mo 2   &mkp LCLK                                                        &lt 3 RET   &kp BSPC                                            &kp DEL
             >;
         };
 
@@ -146,17 +146,17 @@
             display-name = "Lower";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3                  &kp F4             &kp F5             &trans  &trans  &trans  &trans            &trans    &trans    &trans    &trans     &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8                  &kp F9             &kp F10            &trans  &trans  &trans  &trans            &trans    &trans    &kp UP    &trans     &trans  &trans
-&trans  &kp F11  &kp F12  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &trans   &trans    &trans  &trans  &trans  &trans    &trans  &mkp MB4  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans   &trans   &kp LG(LEFT)            &kp LG(RIGHT)      &trans   &trans    &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans    &trans    &trans     &trans  &trans
-&trans  &trans            &trans                  &trans             &trans   &trans                                      &trans  &trans                                           &studio_unlock
+&trans  &kp F1   &kp F2   &kp F3                  &kp F4             &kp F5             &trans  &trans  &trans  &trans              &trans    &trans    &trans    &trans     &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8                  &kp F9             &kp F10            &trans  &trans  &trans  &trans              &trans    &trans    &kp UP    &trans     &trans  &trans
+&trans  &kp F11  &kp F12  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &trans   &trans    &trans  &trans  &trans  &trans    &trans    &mkp MB4  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans   &trans   &kp LG(LEFT)            &kp LG(RIGHT)      &trans   &trans    &trans  &trans  &trans  &trans    &trans    &mkp MB5  &trans    &trans    &trans     &trans  &trans
+&trans  &trans            &trans                  &trans             &trans   &trans                                      &kp INT5  &kp INT4                                         &studio_unlock
             >;
         };
 
         raise_layer {
             display-name = "Raise";
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans            &bt BT_CLR_ALL  &none  &none  &none  &none  &none
 &trans  &none         &none         &none         &none         &none                   &trans  &trans  &trans  &trans            &bt BT_CLR      &none  &none  &none  &none  &none
@@ -170,11 +170,11 @@
             display-name = "Adjust";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans            &bt BT_CLR_ALL  &none  &none  &none  &none  &none
-&trans  &none         &none         &none         &none         &none                   &trans  &trans  &trans  &trans            &bt BT_CLR      &none  &none  &none  &none  &none
-&trans  &none         &none         &none         &none         &none         &none     &trans  &trans  &trans  &trans    &none   &out OUT_TOG    &none  &none  &none  &none  &none
-&trans  &none         &none         &none         &none         &none         &none     &trans  &trans  &trans  &trans    &none   &studio_unlock  &none  &none  &none  &none  &none
-&trans  &none                       &trans        &trans        &trans        &trans                                      &trans  &kp DEL                                     &trans
+&trans  &none   &none   &none   &none   &none             &trans  &trans  &trans  &trans            &none           &none   &none   &none   &none   &none
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &trans            &kp N6          &kp N7  &kp N8  &kp N9  &kp N0  &none
+&trans  &none   &none   &none   &none   &none   &none     &trans  &trans  &trans  &trans    &none   &none           &none   &none   &none   &none   &none
+&trans  &none   &none   &none   &none   &none   &none     &trans  &trans  &trans  &trans    &trans  &studio_unlock  &none   &none   &none   &none   &none
+&trans  &none           &trans  &trans  &trans  &trans                                      &trans  &trans                                          &trans
             >;
         };
 
