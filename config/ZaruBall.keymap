@@ -149,13 +149,13 @@
 
         lower_layer {
             display-name = "Lower";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3                  &kp F4             &kp F5             &trans  &trans  &trans  &trans                      &trans          &trans    &trans    &trans     &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8                  &kp F9             &kp F10            &trans  &trans  &trans  &trans                      &trans          &trans    &kp UP    &trans     &trans  &trans
-&trans  &kp F11  &kp F12  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &trans   &trans    &trans  &trans  &trans  &trans    &trans            &mkp MB4        &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans   &trans   &kp LG(LEFT)            &kp LG(RIGHT)      &trans   &trans    &trans  &trans  &trans  &trans    &mo 3             &mkp MB5        &trans    &trans    &trans     &trans  &trans
-&trans  &trans            &trans                  &trans             &trans   &trans                                      &kp INT_MUHENKAN  &kp INT_HENKAN                                         &studio_unlock
+&trans       &kp F1   &kp F2   &kp F3                  &kp F4             &kp F5             &trans  &trans  &trans  &trans                      &trans          &trans    &trans    &trans     &trans  &trans
+&kp LA(TAB)  &kp F6   &kp F7   &kp F8                  &kp F9             &kp F10            &trans  &trans  &trans  &trans                      &trans          &trans    &kp UP    &trans     &trans  &trans
+&trans       &kp F11  &kp F12  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &trans   &trans    &trans  &trans  &trans  &trans    &trans            &mkp MB4        &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans       &trans   &trans   &kp LG(LEFT)            &kp LG(RIGHT)      &trans   &trans    &trans  &trans  &trans  &trans    &mo 3             &mkp MB5        &trans    &trans    &trans     &trans  &trans
+&trans       &trans            &trans                  &trans             &trans   &trans                                      &kp INT_MUHENKAN  &kp INT_HENKAN                                         &studio_unlock
             >;
         };
 
